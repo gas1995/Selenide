@@ -14,5 +14,5 @@ install:
   - java -jar ./artifacts/app-card-delivery.jar &
   - chmod +x gradlew
 build_script:
-
+  --disable-dev-shm-usage
   ./gradlew clean test -Dselenide.headless=true # запускаем тест, флаг --info позволяет выводить больше информации
